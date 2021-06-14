@@ -21,7 +21,7 @@ The inspiration for this repo came from [this](https://livecodestream.dev/post/a
 
 ----
 
-### Reverse a String
+### ⏪ Reverse a String
 We're able to reverse a string using only one line with the `split`, `join`, and `reverse` methods.
 
 ```js
@@ -49,7 +49,7 @@ console.log("Hello World".split("").reverse().join(""));
 // -> dlroW olleH
 ```
 
-### Average of Array of Numbers
+### 🔢 Average of Array of Numbers
 Javascript reducer allows calculating the average of a number of arrays in a single line. The `.reduce` method is quite useful when writing one-line solutions to a number of problems like finding the sum or maximum in an array of numbers.
 
 ```js
@@ -70,7 +70,7 @@ So, `5` is passed into the `a` parameter of `reduce()` and `10` is passed into `
 `15` is then passed into `a` which we will add to `b` which is now `15` (our third number in the array) and we get `30`. `30` (being passed into `a`) is then added to our last number of the array, `20` (being passed into `b`) and we get `50`. The last thing we do is divide `50` by the length of our array which is `4`.
 
 
-### Array of Past Seven Days
+### 📅 Array of Past Seven Days
 Here's what you would do if you want to get an array of the past 7 days (including today) in your application.
 
 ```js
@@ -85,7 +85,7 @@ __Summary:__
 
 We can easily get the next seven days by changing the minus sign (`-`) to addition (`+`).
 
-### Capitalize a String
+### 🔠 Capitalize a String
 JavaScript does not provide us with a built-in capitalize method but we can easily accomplish this with this simple one line code:
 
 ```js
@@ -101,7 +101,7 @@ __Summary:__
   * Then we're setting that character to uppercase with the `toUpperCase()` method. 
   * Last, we slice our string at index [1] which gives us `"avascript one-liners are fun."` and we concatenate that with our newly capitalized `J`.
 
-### Remove Duplicates in Array
+### 🔂 Remove Duplicates in Array
 We know that sets in Javascript only store unique items. We can use this behavior to our advantage to remove duplicate items in an array. However, it only works with arrays storing primitive data. 
 
 So you’d have to write a multiline solution to remove duplicates in arrays storing objects. But, still, it’s a quite decent method to remove duplicates in simple scenarios.
@@ -113,28 +113,28 @@ removeDuplicates([31, 56, 12, 31, 45, 12, 31])
 // -> [ 31, 56, 12, 45 ]
 ```
 
-### Generate a Random ID
+### 🆔 Generate a Random ID
 This simple function generates a random ID using Math.random(). Since Math.random() doesn’t guarantee that all the generated numbers are unique, this method is not 100% secure to use in production. But there’s no harm in using it during development to quickly get an ID to complete the implementation and test the app.
 
 ```js
 const randomID = Math.random().toString(36).substring(2)
 ```
 
-### Toggle Display of an Element
+### 🖼️ Toggle Display of an Element
 You can easily toggle between hiding and displaying an element with the single line method.
 
 ```js
 const toggle = element => element.style.display = (element.style.display === "none" ? "block" : "none")
 ```
 
-### Generate a Random Hex Color
+### 🔀 Generate a Random Hex Color
 This method generates a random hex code using Math.random() and padEnd(). Use this whenever you want to display a random color in your program.
 
 ```js
 const hexColor = () => "#" + Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, '0')
 ```
 
-### Scroll to Top of Page
+### 🔝 Scroll to Top of Page
 You can scroll to the top of the page in Javascript using scrollTo() method. It accepts the X and Y coordinates of the position Javascript should scroll to. 
 
 So when we pass zero to X and Y, it scrolls to the top of the page.
@@ -143,7 +143,7 @@ So when we pass zero to X and Y, it scrolls to the top of the page.
 const toTop = () => window.scrollTo(0, 0)
 ```
 
-### Get the Number of Days Between Two Days
+### 🗓️ Get the Number of Days Between Two Days
 In this single-line implementation, you should convert the two days into time-based representation and then find their difference. You can then divide it by the number of milliseconds in a day to get the number of days.
 
 ```js
@@ -153,15 +153,15 @@ dayDif(new Date("2020-09-23"), new Date("2020-10-01"))
 // -> 8
 ```
 
-### Clear All Cookies
+### 🍪 Clear All Cookies
 You can clear all the cookies stored by the application by setting their expiry date to a date that has already passed. So if you set the expiry date to the first date in the Javascript time system, the system automatically expires the cookie. And you can clear the data stored in cookies along with the previous step.
 
 ```js
 const clearCookies = document.cookie.split(';').forEach(cookie => document.cookie = cookie.replace(/^ +/, '').replace(/=.*/, `=;expires=${new Date(0).toUTCString()};path=/`));
 ```
 
-### Detect Dark Mode
-This is a great one! If we want to detect whether the user has enabled dark mode in their browser, use this one-line solution. I personally use this one in my personal [website](www.josephskycrest.com).
+### 🕶️ Detect Dark Mode
+This is a great one! If we want to detect whether the user has enabled dark mode in their browser, use this one-line solution. I personally use this one in my personal [website](https://www.josephskycrest.com/).
 
 ```js
 const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
