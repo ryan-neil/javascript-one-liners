@@ -2,7 +2,9 @@
 <!-- <img src="" width="800" alt=""> -->
 
 ## 👆🏻 Summary
-This is a repo to display simple JavaScript code for some common use cases and problems we encounter in web development. I understand some of these examples may be over simplified so because of this the `README` file will contain explanations for each of the snippets and what is happening behind the scenes.
+This is a repo to display simple JavaScript code for some common use cases and problems we encounter in web development. 
+
+I understand some of these examples may be over simplified so because of this the `README` file will contain explanations for each of the snippets and what is happening behind the scenes.
 
 The inspiration for this repo came from [this](https://livecodestream.dev/post/awesome-javascript-one-liners-to-look-like-a-pro/) article by _Anjalee Sudasinghe_.
 
