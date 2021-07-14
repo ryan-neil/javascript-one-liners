@@ -39,7 +39,7 @@ reverseString("Hello World");
 <details>
   <summary>Logic</summary>
 
-  ## Reverse a String Breakdown
+  ### Reverse a String Breakdown
   In the above code snippet, we're passing a string to the `reverseString` function as a parameter. We then split the string with `.split()` method which gives us an ordered list of substrings, puts these substrings into an array, and returns the array. We pass in an empty string (`""`) to `.split()` because we want the string to be split up by this type of separator string.
   ```js
   console.log("Hello World".split(""));
@@ -59,7 +59,7 @@ reverseString("Hello World");
 
 ----
 
-### Reverse an Array
+#everse an Array
 
 ```js
 const reverseArray = (arr) => arr.reverse();
@@ -71,7 +71,7 @@ reverseArray([ 34, 234, 567, 4 ]);
 <details>
   <summary>Logic</summary>
 
-  ## Reverse an Array Breakdown
+  ### Reverse an Array Breakdown
   
 </details>
 
@@ -90,7 +90,7 @@ average([ 5, 10, 15, 20 ]);
 <details>
   <summary>Logic</summary>
 
-  ## Average of Array of Numbers Breakdown
+  ### Average of Array of Numbers Breakdown
   Here's the math what's actually being done in the above example. Hopefully this gives a better understanding of how `reduce()` works under the hood.
   ```js
   [(5) + (10)] = 15, [15 + (15)] = 30, [30 + (20)] = 50 / [4] = 12.5
@@ -116,7 +116,7 @@ console.log(pastWeek);
 <details>
   <summary>Logic</summary>
 
-  ## Array of Past Seven Days Breakdown
+  ### Array of Past Seven Days Breakdown
   Here's the math what's actually being done in the above example. Hopefully this gives a better understanding of how `reduce()` works under the hood.
   ```js
   [(5) + (10)] = 15, [15 + (15)] = 30, [30 + (20)] = 50 / [4] = 12.5
@@ -146,7 +146,7 @@ console.log(capitalize("javascript one-liners are fun."));
 <details>
   <summary>Logic</summary>
 
-  ## Capitalize a String Breakdown
+  ### Capitalize a String Breakdown
   * The first thing we're doing is getting the character at index [0] with `charAt(0)` which gives us, `j`. 
   * Then we're setting that character to uppercase with the `toUpperCase()` method. 
   * Last, we slice our string at index [1] which gives us `"avascript one-liners are fun."` and we concatenate that with our newly capitalized `J`.
@@ -170,7 +170,7 @@ removeDuplicates([31, 56, 12, 31, 45, 12, 31])
 <details>
   <summary>Logic</summary>
 
-  ## Remove Duplicates in Array Breakdown
+  ### Remove Duplicates in Array Breakdown
 
 </details>
 
@@ -186,7 +186,7 @@ const randomID = Math.random().toString(36).substring(2)
 <details>
   <summary>Logic</summary>
 
-  ## Generate a Random ID Breakdown
+  ### Generate a Random ID Breakdown
 
 </details>
 
@@ -202,7 +202,7 @@ const toggle = element => element.style.display = (element.style.display === "no
 <details>
   <summary>Logic</summary>
 
-  ## Toggle Display of an Element Breakdown
+  ### Toggle Display of an Element Breakdown
 
 </details>
 
@@ -218,7 +218,7 @@ const hexColor = () => "#" + Math.floor(Math.random() * 0xffffff).toString(16).p
 <details>
   <summary>Logic</summary>
 
-  ## Generate a Random Hex Color Breakdown
+  ### Generate a Random Hex Color Breakdown
 
 </details>
 
@@ -236,7 +236,7 @@ const toTop = () => window.scrollTo(0, 0)
 <details>
   <summary>Logic</summary>
 
-  ## Scroll to Top of Page Breakdown
+  ### Scroll to Top of Page Breakdown
 
 </details>
 
@@ -255,7 +255,7 @@ dayDif(new Date("2020-09-23"), new Date("2020-10-01"))
 <details>
   <summary>Logic</summary>
 
-  ## Get the Number of Days Between Two Days Breakdown
+  ### Get the Number of Days Between Two Days Breakdown
 
 </details>
 
@@ -271,7 +271,7 @@ const clearCookies = document.cookie.split(';').forEach(cookie => document.cooki
 <details>
   <summary>Logic</summary>
 
-  ## Clear All Cookies Breakdown
+  ### Clear All Cookies Breakdown
 
 </details>
 
@@ -288,6 +288,23 @@ const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme
 <details>
   <summary>Logic</summary>
 
-  ## Detect Dark Mode Breakdown
+  ### Detect Dark Mode Breakdown
+
+</details>
+
+---
+
+### Turn String Number to Number Value
+Description...
+
+```js
+const numValue = parseInt("1,200,000".replace(/\,/g, "").replace(/\$/g, ""));
+// -> 1200000
+```
+
+<details>
+  <summary>Logic</summary>
+
+  ### Turn String Number to Number Value Breakdown
 
 </details>
